@@ -362,7 +362,12 @@ s_r_t_hh_1person s_r_t_hh_2person
 
 
 
+import delimited "G:\My Drive\0.SWB\KC\data\b_zip_KC_6county_Union.csv", encoding(ISO-8859-2) clear 
+rename gisjoin z_gisjoin
+egen z_b_target_n=total(b_target_2),by(z_gisjoin)
+keep z_gisjoin zcta5ce20 shape_area state county z_b_target_n
+duplicates drop z_gisjoin,force
 
 
-
- s_r_t_hh_3person s_r_t_hh_4person s_r_t_hh_5person s_r_t_hh_6person s_r_t_hh_7person
+gen z_target_pop_per_sq_mile=z_b_target_n/(shape_area/2589973.632302)
+export delimited using  "G:\My Drive\0.SWB\SWB211\intermediate_data\zipcode_level_target_population.csv", replace
