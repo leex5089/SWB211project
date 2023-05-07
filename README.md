@@ -1,4 +1,4 @@
-# SWB211project
+# SWB211 Project
 
 Geospatial analysis including the following 6 counties in the Kansas City metropolitan area:</br>
 </br>
@@ -10,5 +10,6 @@ Missouri: Jackson County</br>
 Missouri: Platte County</br>
 </br>
 
+### [Project Website](https://swb211.netlify.app/)</br>
+### [Data](https://drive.google.com/drive/folders/1NLS-3CX3jf6vaW8Qq0sh0UR8HtHD-9_k?usp=share_link)</br>
 
-**[Data](https://drive.google.com/drive/folders/1NLS-3CX3jf6vaW8Qq0sh0UR8HtHD-9_k?usp=share_link)
